@@ -30,6 +30,6 @@ for unit in json_result:
 db.execute('SELECT * FROM units;')
 
 units = pd.DataFrame(db.fetch())
-units.to_csv(config.EXPORT_PATH + 'units.csv', encoding='utf8')
+# units.to_csv(config.EXPORT_PATH + 'units.csv', encoding='utf8')
 
 db.close()
